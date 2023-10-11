@@ -1,10 +1,18 @@
-import './App.css';
-import { Box, Typography } from '@mui/material'
+import "./App.css";
+import {BrowserRouter,Routes,Route} from 'react-router-dom'
+import Home from "./pages/Home";
 function App() {
+
   return (
-    <Box>
-    <Typography>Hello I am here</Typography>
-    </Box>
+    
+       <>
+        <BrowserRouter>
+          <Routes>
+            <Route path='/' element={<Home />}/>
+          </Routes>
+        </BrowserRouter>
+       </>
+
   );
 }
 

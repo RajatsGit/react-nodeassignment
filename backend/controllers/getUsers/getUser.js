@@ -2,12 +2,11 @@ import fetchData from '../../utils/fetchDataFromPublicAPI.js'
 
 export default async function getUser(req,res) {
     try {
-        const data = await fetchData();
-
+        const usersData = await fetchData();
         res.status(200).json({
             success:true,
             message:'data is available',
-            data
+            usersData
         })
     } catch (error) {
         res.status(500).json({
