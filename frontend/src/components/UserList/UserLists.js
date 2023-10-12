@@ -7,8 +7,6 @@ import { Box } from '@mui/material';
 import { userListsStyleObject } from './Styles/UserListsStyleObject';
 
 
-
-
 function UserList({ data, isLoading, error }) {
   const [searchParams] = useSearchParams();
   const [currentPage, setCurrentPage] = useState(1);
