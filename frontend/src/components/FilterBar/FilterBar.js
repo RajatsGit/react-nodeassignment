@@ -59,7 +59,7 @@ const handleFilterOptions = ()=>{
                 display:'flex',
                 alignItems:'center',
                 justifyContent:'center',
-                width:{sm:'50%',md1:'50%',md:'100%',xl:'100%'},
+                width:'100%',
                 m:'2rem 0',
                 // justifyContent:'space-between',
                 gap:{sm:'1rem',md:'1rem'}
@@ -73,10 +73,10 @@ const handleFilterOptions = ()=>{
             city: e.target.value
         })}}>
                     
-        <MenuItem value=''>Select City</MenuItem>
+        <MenuItem value=''sx={FilterBarStyleObject.menuItem}>Select City</MenuItem>
         {uniqueCities?.map((city)=>{
             return(
-            <MenuItem value={city} key={city}>{city}</MenuItem>
+            <MenuItem sx={FilterBarStyleObject.menuItem} value={city} key={city}>{city}</MenuItem>
             )
         })}
         </Select>
@@ -88,10 +88,10 @@ const handleFilterOptions = ()=>{
             company: e.target.value
         })}}>
                     
-        <MenuItem value=''>Select Company</MenuItem>
+        <MenuItem value='' sx={FilterBarStyleObject.menuItem} >Select Company</MenuItem>
         {uniqueCompanies?.map((company)=>{
             return(
-            <MenuItem value={company} key={company}>{company}</MenuItem>
+            <MenuItem  sx={FilterBarStyleObject.menuItem} value={company} key={company}>{company}</MenuItem>
             )
         })}
         </Select>
