@@ -1,5 +1,5 @@
 import { Box } from "@mui/material";
-import FilterBar from "../../components/FilterBar";
+import FilterBar from "../../components/FilterBar/FilterBar";
 import UserList from "../../components/UserList/UserLists";
 
 import { useGetUsersQuery } from '../../redux/services/userDataFetch';
@@ -11,7 +11,7 @@ function Home() {
  
   return (
     
-        <Box sx={{display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'center'}}>
+        <Box sx={{display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'center',width:'80%'}}>
           <FilterBar data={data?.usersData?.data}/>
           <UserList data={data} error={error} isLoading={isLoading}/>
         </Box>

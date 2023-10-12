@@ -4,4 +4,18 @@
   align-items: center;
   justify-content: center;
   margin: 2rem;
+  /* width: 100vw; */
+}
+
+
+@font-face {
+  font-family: "Poppins-Light";   /*Can be any text*/
+  src: url("../src/Fonts/Poppins-Regular.ttf") format("truetype");
+    
+}
+
+@font-face {
+  font-family: "Poppins-Bold";   /*Can be any text*/
+  src: url("../src/Fonts/Poppins-SemiBold.ttf") format("truetype");
+    
 }
