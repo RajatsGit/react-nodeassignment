@@ -23,7 +23,3 @@ for Frontend command :
 ```bash
 npm run test
 ```
-for Backend command : 
-```bash
-npm run test
-```
