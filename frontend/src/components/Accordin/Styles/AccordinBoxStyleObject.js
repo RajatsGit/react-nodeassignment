@@ -60,7 +60,7 @@ export const styleObject = {
     display: "flex",
     alignItems: "center",
     justifyContent: "space-around",
-    boxShadow: "0px 4px 10px 10px rgba(0, 0, 0, 0.05)",
+    // boxShadow: "0px 4px 10px 10px rgba(0, 0, 0, 0.05)",
     p: "2rem",
     borderRadius: "2rem",
     m: "2rem 0rem",
